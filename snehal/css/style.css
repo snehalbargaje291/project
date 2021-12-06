@@ -24,6 +24,8 @@
 .nav-list{
     display: flex;
     margin: auto;
+    width: 100%;
+    justify-content: space-evenly;
 }
 li{
     list-style: none;
@@ -39,7 +41,7 @@ a{
 .search{
     display: flex;
     padding-top: 20px;
-    width: 400px;
+    width: 600px;
 }
 .search i.fa::before{
     font-size: large;
@@ -349,6 +351,19 @@ input[type=text],[type=date],[type=password],[type=email],[type=textarea]{
         height: 60px;
     }
     .v-class{
-        opacity: 0;
+        display: none;
     }
+
+    .ricon{
+        display: flex ;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+.blank{
+    width : 150px;
 }

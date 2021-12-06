@@ -7,6 +7,7 @@ NavList= document.querySelector('.nav-list')
 burger.addEventListener('click',()=>{
     NavList.classList.toggle('v-class');
     NavBar.classList.toggle('h-nav');
+    NavBar.classList.toggle('ricon');
 })
 
 //form

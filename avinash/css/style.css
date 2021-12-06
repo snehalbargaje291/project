@@ -1,0 +1,180 @@
+:root{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+    padding: 0px;
+    --nav:#a502c5;
+    --white: #ffffff;
+    --background: #a502c525;
+    --navback:#4c005c;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--background);
+}
+
+
+/* ***************************  navigation  ***************************** */
+
+.logo a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: var(--nav);
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-size: 1.6rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links{
+    margin:none;
+    padding:none;
+}
+
+.nav-search{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-search button{
+    background-color: aqua;
+    border:none;
+    margin: none;
+    padding:none;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.nav-search input{
+    margin:none;
+    padding:none;
+    height: 1.5rem;
+    border: none;
+    max-width: 25rem;
+    min-width: 15rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.navpro{
+    border-radius: 50% ;
+    background-color: white;
+    width: 1.8rem;
+    
+}
+.navpro a img{
+    width: 1.8rem;
+    padding: none ;
+    margin: none;
+
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1350px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--navback);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+    }
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
