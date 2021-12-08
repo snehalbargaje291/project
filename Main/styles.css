@@ -1,0 +1,339 @@
+/*AVINASH'S NavBar---START*/
+
+:root{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+    padding: 0px;
+    --nav :#5adb43;
+    --white: #ffffff;
+    --background: #1dbb6c25;
+    --navback:#6bdd67;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--background);
+}
+
+
+/* ***************************  navigation  ***************************** */
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: var(--nav);
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-links {
+    margin:none;
+    padding:none;
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-search{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-search button{
+    background-color: aqua;
+    border:none;
+    margin: none;
+    padding:none;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.nav-search input{
+    margin:none;
+    padding:none;
+    height: 1.5rem;
+    border: none;
+    max-width: 25rem;
+    min-width: 15rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.navpro{
+    border-radius: 50% ;
+    background-color: var(--white);
+    width: 1.8rem;
+    
+}
+.navpro a img{
+    width: 1.8rem;
+    padding: none ;
+    margin: none;
+
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1350px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--nav);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+    }
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    /*footer*/
+    .footer-main{
+        flex-direction: column;
+        width: 100%;
+    }
+    .social{
+        width: 100%;
+    }
+    .contact{
+        width:100%;
+    }
+    .sitemap{
+        width: 100%;
+    }
+    .footlogo{
+        width: 100%;
+    }
+    /*footer*/
+}
+
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/*AVINASH'S NavBar---END*/
+
+
+/*dropdown*/
+
+.dropdown ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+.dropdown ul li{
+    background-color: var(--nav);
+    display: inline-block;
+}
+.dropdown a{
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+}
+/* Hide Dropdown by Default*/
+.dropdown ul ul {
+    display: none;
+    position:absolute;
+    padding-top: 0.5rem;
+}
+.dropdown ul li ul li a{
+    height: 2rem;
+    text-align: center;
+}
+.dropdown ul li ul li a:hover{
+   color: #000000;
+}
+/* Display Dropdown on Hover */
+.dropdown ul li:hover > ul {
+    display: inherit;
+}
+/* Fisrt Tier Dropdown */
+.dropdown ul ul li{
+    width: 100px;
+    float: none;
+    display: list-item;
+    position: relative;
+    line-height: 1rem;
+}
+.dropdown i.fa::before{
+    font-size: 38px;
+    color: var(--white);
+}
+    
+
+/*footer*/
+
+.footer-main{
+    display: flex;
+    background-color: var(--nav);
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.copyright {
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+    color: var(--white);
+    text-align: center;
+}
+.contact{
+    padding: 25px;
+    width: 33.33%;
+}
+.contact-form{
+    padding: 0 60px 0 60px;
+}
+.sitemap{
+    padding: 25px;
+    width: 33.33%;
+}
+.sitemap a {
+    text-decoration: none;
+    color: black;
+}
+.social{
+    display:flex;
+    padding: 25px;
+    justify-content: center;
+}
+.footlogo{
+    width: 33.33%;
+    padding: 20px;
+}
+.flogo{
+    height: 8rem;
+    width: 8rem;
+}
+
+
+/*socials*/
+.social .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  /*content container*/
+  .container{
+      height: 5rem;
+  }
+
+  
+
+
+
+
+
+
+
+
