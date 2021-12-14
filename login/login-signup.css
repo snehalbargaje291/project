@@ -104,3 +104,22 @@ span{
 #signup{
     left: 32.4rem;
 }
+
+ .hide {
+    display: none;
+    font-size: x-small;
+  }
+  .hide1 {
+    display: none;
+    font-size: x-small;
+  } 
+  
+  #txtPassword:hover + .hide {
+    display: block;
+    color: rgb(246, 49, 49);
+  }
+
+  #txtConfirmPassword:hover + .hide1 {
+    display: block;
+    color: rgb(246, 49, 49);
+  }

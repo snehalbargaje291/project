@@ -22,8 +22,10 @@
                 <form class="sign-up" id="signup">
                     <input type="text" class="form-field" placeholder="Username" required>
                     <input type="email" class="form-field" placeholder="Email" required>
-                    <input type="password" id="txtPassword" class="form-field" placeholder="Password" required>
+                    <input type="password" id="txtPassword" class="form-field" placeholder="Password" minlength="8" required>
+                    <div class="hide">Must contain at least 8 characters</div>
                     <input type="password" id="txtConfirmPassword" class="form-field" placeholder="Confirm-Password" required>
+                    <div class="hide1">Password must be same as above</div>
                     <input type="checkbox" class="checkbox"><span>I have read the agreement.</span>
                     <button type="submit" class="submit" id="btnSubmit" onclick="Validate()" >Sign-Up</button>
                 </form>
