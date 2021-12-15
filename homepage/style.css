@@ -238,14 +238,12 @@ section{
 }
 
 
-.product-container{
-    padding-left: 10rem;  
+.product-container{  
     width: 30%;
   }
   
   .container {
     position: relative;
-    width: 70%;
     padding: 0.5rem;
   }
   
@@ -280,27 +278,26 @@ section{
   }
   
   .text {
-      cursor: pointer;
+    cursor: pointer;
     background-color: #04AA6D;
     color: white;
     font-size: 14px;
-    padding: 0.2rem 0.5em;
-    border: 0;
-    outline: none;
-    border-radius: 1rem;
+    padding: 0.2rem 0.5em; 
+    border-radius:1rem;
   }
-
-
-
-
-
 
   .home-content{
         width: 70%;  
-        padding: 4rem;
+        padding: 3rem;
+		justify-content: center;
   }
 
   .main{
 	  padding: 4rem;
+  }
+
+  .empty{
+	  padding: 5rem;
+	  background: #c281f6;
   }
 
