@@ -29,6 +29,7 @@ section{
 	position: relative;
 	width: 100%;
 	padding-bottom: 40px;
+	text-align: center;
 }
 .section-title h2 {
 	float: left;
