@@ -1,0 +1,72 @@
+body{
+    font-family: sans-serif;
+}
+
+.about-us-main{
+    padding: 3rem;
+    background-color: rgb(210, 163, 253);
+}
+
+.aboutus{
+    display: flex;
+    padding: 3rem;
+}
+
+.about-img{
+    width: 40%;
+    padding: 2rem;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-img h1{
+    font-size: 5rem;
+    color: palevioletred;
+    float:right;
+    padding: 2rem;
+}
+
+.about-text{
+    color: white;
+    width: 60%;
+    padding: 2rem;
+    font-size: medium;
+    border-radius: 3rem;
+}
+
+.about-text h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+}
+
+.brand-diff{
+    justify-content: center;
+    display: flex;
+    padding: 3rem;
+}
+
+.diff{
+    margin: auto;
+    border-radius: 1rem;
+    background-color: aquamarine;
+    transition: transform .2s;
+    padding: 5rem;
+}
+
+.diff-head{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+  
+  .diff:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+  }
