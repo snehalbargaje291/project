@@ -126,3 +126,10 @@ details[open] > summary:before,
 details.open > summary:before { 
 	background: url('../images/plus-min.png') no-repeat center bottom; 
 }
+
+.image-details{
+	display: flex;
+}
+.product-container{
+	background-color: rgb(245, 131, 245);
+}
